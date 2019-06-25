@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About | Danny Kim</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+</head>
+
+<body class="pt-5">
+<!--padding top avoids overlap between fixed NavBar and other contents per:
+https://getbootstrap.com/docs/4.0/components/navbar/#containers-->
+    <div class="container col-lg">
+        <!--adding 12 doesn't change anything?-->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light pb-3">
+            <div class="col-lg-2">
+                <!--empty space to the left of the logo.-->
+            </div>
+
+            <div class="col-lg-2">
+                <!--space for logo-->
+                <a class="navbar-brand" href="index.html">Danny Kim</a>
+            </div>
+
+            <div class="col-lg-4">
+                <!--space between logo and nav bar buttons-->
+            </div>
+
+            <div class="col-lg-2">
+                <!--Nav bar portion of the container-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                        <a class="nav-item nav-link" href="contact.html">Contact</a>
+                    </div>
+                </div>   
+            </div>
+
+            <div class="col-lg-2">
+                <!--empty column to the right end of screen. 
+                    Doesn't affect column to its left.-->
+            </div>
+        
+        </nav> <!--ends nav-->
+    </div> <!--ends container for nav-->
+
+    <div class="row pt-3 mt-3">
+        
+        <div class="col-lg-2">
+            <!--empty space on left-->
+        </div>
+            
+        <div class="card" style="width: 66%">
+            <div class="card-body">
+                <div class="container">
+                    <h1 class="card-title">About Me</h1>    
+            
+                    <div class="row pb-3">
+                        <div class="col-lg-2">
+                            <img src="./assets/images/face.jpg" alt="profile-image" class="img-thumbnail">
+                        </div>
+                        
+                        <div class="col-lg card-text text-muted">
+                            <p>I am budding new developer.  Prior to this life, I was in international commerce, market research and real estate management.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="container text-muted">
+                        <div class="row card-text">
+                            <p>More something something something something something something about me, something! =)</p>
+                        </div>
+                        <div class="row card-text">
+                            <p>More something something something something something something about me, something! =)</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+
+        <div class="col-lg-2">
+<!--holds space to the right end of body-->
+        </div>
+    </div>
+
+</body>
+
+</html>
