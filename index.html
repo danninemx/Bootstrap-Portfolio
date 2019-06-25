@@ -14,22 +14,25 @@
 <body class="pt-5">
 <!--padding top avoids overlap between fixed NavBar and other contents per:
 https://getbootstrap.com/docs/4.0/components/navbar/#containers-->
-    <div class="container col-lg-12">
+    <div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <!--above container's grid setup just asks for full available width in every ratio. Can I just use "col"?
+        Also, unless you forgo this and use width: 66%, h1 does not seem to align with logo.-->
+
         <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light pb-3">
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                 <!--empty space to the left of the logo.-->
             </div>
 
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                 <!--space for logo-->
                 <a class="navbar-brand" href="index.html">Danny Kim</a>
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                 <!--space between logo and nav bar buttons-->
             </div>
 
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                 <!--Nav bar portion of the container-->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -44,7 +47,7 @@ https://getbootstrap.com/docs/4.0/components/navbar/#containers-->
                 </div>   
             </div>
 
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                 <!--empty column to the right end of screen. 
                     Doesn't affect column to its left.-->
             </div>
@@ -54,22 +57,23 @@ https://getbootstrap.com/docs/4.0/components/navbar/#containers-->
 
     <div class="row pt-3 mt-3">
         
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-md-2">
             <!--empty space on left-->
         </div>
             
-        <div class="card" style="width: 66%"> 
+        <div class="card col-lg-8 col-md-8 col-sm-12 col-xs-12"> 
             <!--using grid col # makes alignment tricky here-->
             <div class="card-body">
                 <div class="container">
                     <h1 class="card-title">About Me</h1>    
-            
+                    <hr>
                     <div class="row pb-3">
                         <div class="col-lg-fluid">
                             <img src="./assets/images/face.jpg" alt="profile-image" class="img-thumbnail">
                         </div>
                         
-                        <div class="col-lg card-text text-muted">
+                        <div class="col-lg col-md col-sm col-xs card-text text-muted">
+                            <!--text to the right of the profile photo should either fit to space or get shifted down below.-->
                             <p>I am a student at the University of Texas Coding Bootcamp and a budding new developer.  Prior to this life, I was in international commerce, market research and real estate management.</p>
                         </div>
                     </div>
@@ -88,7 +92,7 @@ https://getbootstrap.com/docs/4.0/components/navbar/#containers-->
         </div>
     
 
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-md-2">
             <!--holds space to the right end of body-->
         </div>
     </div> <!--row ends-->
@@ -99,9 +103,10 @@ https://getbootstrap.com/docs/4.0/components/navbar/#containers-->
     Also, text-center doesn't work either way.-->
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
 </body>
 
 </html>
