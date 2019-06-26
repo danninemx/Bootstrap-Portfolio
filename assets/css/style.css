@@ -5,3 +5,10 @@ body {
 .project-card {
     margin: 20px 0 20px 0;
 }
+
+.img-thumbnail {
+    float: left;
+}
+.container{
+    padding: 5px
+}
