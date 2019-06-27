@@ -6,121 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About | Danny Kim</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
 </head>
 
 <body class="pt-5">
-<!--padding top avoids overlap between fixed NavBar and other contents per:
+    <!--padding top avoids overlap between fixed NavBar and other contents per:
 https://getbootstrap.com/docs/4.0/components/navbar/#containers-->
-<!--Container for nav bar.
-    This container's grid setup just asks for full available width in every ratio. Can I just use "col"?
-    Also, unless you forgo this and use width: 66%, h1 does not seem to align with logo.-->
-    
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light pb-3">
-        <div class="container">
-            
-                            <!--empty space to the left of the logo.
-            <div class="col-lg-2 col-md-2 col-sm-2 col-2">         
-            </div>
-    -->
-                <!--<div class="col-2">-->
-                    <!--space for logo-->
-                    <a class="navbar-brand" href="index.html">Danny Kim</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-    
-                <!--</div>
+    <section id="main-header">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light pb-3">
+            <div class="container">
 
-                <div class="col-lg-4 col-md-4 col-sm-4 col-4">
-                    space between logo and nav bar buttons
+                <a class="navbar-brand" href="index.html">Danny Kim</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse text-right" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
                 </div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-2">
-                    <!--Nav bar portion of the container-->
-                    
-                    <div class="collapse navbar-collapse text-right" id="navbarNavAltMarkup">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
-                                </li>
-                            </ul>
 
-
-                    </div>   
-                <!--</div>-->
-
-            <!--
-                <div class="col-lg-2 col-md-2 col-sm-2 col-2">
-                empty column to the right end of screen. 
-                    Doesn't affect column to its left.
-                </div>-->
-            
-
-        </div> <!--ends container-->
-    </nav> <!--ends  nav-->
-
-    <div class="container">
-        <div class="row mt-6">
-            <!--
-            <div class="col-lg-2 col-md-2 col-sm-2">
-                <!--empty space on left
             </div>
-        -->
-            <div class="card col-lg-8 col-md-8 col-sm-8 col-12"> 
+            <!--ends container-->
+        </nav>
+        <!--ends  nav-->
+    </section>
+
+    <section id="main-body" class="pt-3">
+        <div class="container">
+
+            <div class="card">
                 <!--using grid col # makes alignment tricky here. style="width: 66%" seems to work better.-->
                 <div class="card-body">
-                    <div class="container">
-                        <h1 class="card-title">About Me</h1>    
-                        <hr>
-                        <div class="row pb-3" style=display:inline-block>
-                            <div class="col-lg-fluid mr-3">
-                                <img src="./assets/images/face.jpg" alt="profile-image" class="img-thumbnail">
-                            </div>
-                            
-                            <div class="col-lg col-md col-sm col-xs card-text text-muted">
-                                <!--text to the right of the profile photo should either fit to space or get shifted down below.-->
-                                <p>I have worked in international commerce, real estate management, market research and analytics for nearly 15 years. After my time at a Houston-based software startup, I set out to develop platforms and tools that improve lives and businesses, and joined UTA's Houston Coding Bootcamp.</p>
-                            </div>
+                    <h1 class="card-title">About Me</h1>
+                    <hr>
+                    <div class="row pb-3" style=display:inline-block>
+                        <div class="col-lg-fluid mr-3">
+                            <img src="./assets/images/face.jpg" alt="profile-image" class="img-thumbnail">
                         </div>
-                        
-                        <div class="container text-muted">
-                            <div class="row card-text">
-                                <p>In the digital world, I dabble in MySQL/TSQL, HTML, CSS, Javascript, Python, and VBA for Excel.</p>
-                            </div>
-                            <div class="row card-text">
-                                <p>In the real world, I am fluent in English and Korean, conversant in Japanese, and understand just enough Mandarin to eavesdrop on Chinese mothers at the supermarket.</p>
-                            </div>
+
+                        <div class="col-lg col-md col-sm col-xs card-text text-muted">
+                            <!--text to the right of the profile photo should either fit to space or get shifted down below.-->
+                            <p>I have worked in international commerce, real estate management, market research
+                                and analytics for nearly 15 years. After my time at a Houston-based software startup, I
+                                set out to develop platforms and tools that improve lives and businesses, and
+                                joined UTA's Houston Coding Bootcamp.</p>
                         </div>
-                        
                     </div>
+
+                    <div class="container text-muted">
+
+                        <p>In the digital world, I dabble in MySQL/TSQL, HTML, CSS, Javascript, Python, and
+                            VBA for Excel.</p>
+                        <p>In the real world, I am fluent in English and Korean, conversant in Japanese, and
+                            understand just enough Mandarin to eavesdrop on Chinese mothers at the
+                            supermarket.
+                        </p>
+
+                    </div>
+
+
                 </div>
             </div>
+
         </div>
 
-            <div class="col-lg-2 col-md-2 col-sm-2">
-                <!--holds space to the right end of body-->
-            </div>
-        </div> <!--row ends-->
+    </section>
+    <!--main-body ends-->
 
-    <footer class="navbar navbar-expand-lg text-center fixed-bottom navbar-dark bg-dark pt-3">
-            <div class="navbar-brand">
-                Copyright &copy;
-            </div>
-    
+
+    <footer class="
+    navbar navbar-expand-lg text-center fixed-bottom navbar-dark bg-dark pt-3">
+        <div class="navbar-brand">
+            Copyright &copy;
+        </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
- 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
