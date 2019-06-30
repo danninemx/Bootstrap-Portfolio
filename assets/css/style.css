@@ -6,6 +6,7 @@ h1  {
     font-family: Times, "Times New Roman", sans-serif;
 }
 
+/* Below is for the img & heading pair in portfolio.html  */
 .project-card {
     margin: 20px 0 20px 0;
 }
@@ -16,4 +17,10 @@ h1  {
 }
 .container{
     padding: 5px;
+}
+
+#footer-brand  {
+    flex: auto;
+    font-size: 1em;
+    color: #ccc;
 }

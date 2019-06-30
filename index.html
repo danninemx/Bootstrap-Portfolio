@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About | Danny Kim</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
 </head>
@@ -18,7 +17,6 @@ https://getbootstrap.com/docs/4.0/components/navbar/#containers-->
     <section id="main-header">
         <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light pb-3">
             <div class="container">
-
                 <a class="navbar-brand" href="index.html">Danny Kim</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,47 +35,38 @@ https://getbootstrap.com/docs/4.0/components/navbar/#containers-->
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
-
                 </div>
+            </div>  <!--ends container within Nav Bar-->
+        </nav>  <!--ends Bootstrap Nav Bar-->
+    </section>  <!--ends main-header-->
 
-            </div>
-            <!--ends container-->
-        </nav>
-        <!--ends  nav-->
-    </section>
-
-    <section id="main-body" class="pt-3">
+    <section id="main-body" class="pt-3 mt-3">
         <div class="container">
-
             <div class="card">
-                <!--using grid col # makes alignment tricky here. style="width: 66%" seems to work better.-->
                 <div class="card-body">
                     <h1 class="card-title">About Me</h1>
                     <hr>
                     <div class="row pb-3" style=display:inline-block>
                         <div class="col-lg-fluid mr-3">
                             <img src="./assets/images/face.jpg" alt="profile-image" class="img-thumbnail">
-                        </div>
+                        </div>  <!--end column for photo-->
 
-                        <div class="col-lg col-md col-sm col-xs card-text text-muted">
-                            <!--text to the right of the profile photo should either fit to space or get shifted down below.-->
+                        <div class="col-lg col-md col-md col-12 card-text text-muted">
                             <p>I have worked in international commerce, real estate management, market research
                                 and analytics for nearly 15 years. After my time at a Houston-based software startup, I
                                 set out to develop platforms and tools that improve lives and businesses, and
                                 joined UTA's Houston Coding Bootcamp.</p>
                         </div>
-                    </div>
+                    </div>  <!--end row containing photo and inline paragraph-->
 
                     <div class="container text-muted">
-
                         <p>In the digital world, I dabble in MySQL/TSQL, HTML, CSS, Javascript, Python, and
                             VBA for Excel.</p>
                         <p>In the real world, I am fluent in English and Korean, conversant in Japanese, and
                             understand just enough Mandarin to eavesdrop on Chinese mothers at the
                             supermarket.
                         </p>
-
-                    </div>
+                    </div>  <!--end container for paragraphs below the photo-->
 
 
                 </div>
@@ -85,13 +74,11 @@ https://getbootstrap.com/docs/4.0/components/navbar/#containers-->
 
         </div>
 
-    </section>
-    <!--main-body ends-->
+    </section>    <!--main-body ends-->
 
 
-    <footer class="
-    navbar navbar-expand-lg text-center fixed-bottom navbar-dark bg-dark pt-3">
-        <div class="navbar-brand">
+    <footer class="navbar navbar-expand-lg text-center fixed-bottom navbar-dark bg-dark pt-3">
+        <div class="navbar-brand" id="footer-brands">
             Copyright &copy;
         </div>
     </footer>
