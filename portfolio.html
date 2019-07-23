@@ -1,141 +1,187 @@
 `
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>About | Danny Kim</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
 
-</head>
-
-<body class="pt-5">
+  <body class="pt-5">
     <!--padding top avoids overlap between fixed NavBar and other contents per:
 https://getbootstrap.com/docs/4.0/components/navbar/#containers-->
-<section id="main-header">
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light pb-3">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">Danny Kim</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <section id="main-header">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light pb-3">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Danny Kim</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-                <div class="collapse navbar-collapse text-right" id="navbarNavAltMarkup">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>  <!--ends container within Nav Bar-->
-        </nav>  <!--ends Bootstrap Nav Bar-->
+          <div
+            class="collapse navbar-collapse text-right"
+            id="navbarNavAltMarkup"
+          >
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"
+                  >About <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--ends container within Nav Bar-->
+      </nav>
+      <!--ends Bootstrap Nav Bar-->
     </section>
 
-
     <div class="row pt-3 mt-3">
+      <div class="col-lg-2 col-md-2 col-sm-2">
+        <!--empty space on left-->
+      </div>
 
-        <div class="col-lg-2 col-md-2 col-sm-2">
-            <!--empty space on left-->
-        </div>
+      <div class="card col-lg-8 col-md-8 col-sm-8 col-xs-12">
+        <!--using grid col # makes alignment tricky here.-->
 
-        <div class="card col-lg-8 col-md-8 col-sm-8 col-xs-12">
-            <!--using grid col # makes alignment tricky here.-->
+        <div class="card-body">
+          <div class="container">
+            <h1 class="card-title">Portfolio</h1>
+            <hr />
+            <div class="row">
+              <a href="https://github.com/danninemx/TriviaGame">
+                <div class="card mr-5 project-card" style="width: 18rem;">
+                  <img
+                    src="https://media.giphy.com/media/JsCv9cGV90yoQuFzvG/giphy.gif"
+                    class="card-img-top"
+                    alt="Video Game Trivia"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Video Game Trivia</h5>
+                  </div>
+                  <!-- End card-body div for Trivia -->
+                </div>
+                <!-- End card for Trivia -->
+              </a>
 
-            <div class="card-body">
-                <div class="container">
-                    <h1 class="card-title">Portfolio</h1>
-                    <hr>
-                    <div class="row">
-                        <div class="card mr-5 project-card" style="width: 18rem;">
-                            <img src="./assets/images/technics-q-c-640-480-1.jpg" class="card-img-top" alt="Project 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Project 1</h5>
-                            </div>
-                        </div>
+              <a href="https://github.com/danninemx/unit-4-game">
+                <div class="card mr-5 project-card" style="width: 18rem;">
+                  <img
+                    src="./assets/images/Star-Wars-RPG.png"
+                    class="card-img-top"
+                    alt="Star Wars RPG"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Simple RPG Game</h5>
+                  </div>
+                  <!-- End card-body div for simple RPG -->
+                </div>
+                <!-- End card for simple RPG -->
+              </a>
+            </div>
+            <!--end row-->
 
-                        <div class="card mr-5 project-card" style="width: 18rem;">
-                            <img src="./assets/images/technics-q-c-640-480-2.jpg" class="card-img-top" alt="Project 2">
-                            <div class="card-body">
-                                <h5 class="card-title">Project 2</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end row-->
+            <div class="row">
+              <div class="card mr-5 project-card" style="width: 18rem;">
+                <img
+                  src="./assets/images/technics-q-c-640-480-5.jpg"
+                  class="card-img-top"
+                  alt="Project 3"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Project 3</h5>
+                </div>
+              </div>
 
-                    <div class="row">
-                        <div class="card mr-5 project-card" style="width: 18rem;">
-                            <img src="./assets/images/technics-q-c-640-480-5.jpg" class="card-img-top" alt="Project 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Project 3</h5>
-                            </div>
-                        </div>
+              <div class="card mr-5 project-card" style="width: 18rem;">
+                <img
+                  src="./assets/images/technics-q-c-640-480-7.jpg"
+                  class="card-img-top"
+                  alt="Project 4"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Project 4</h5>
+                </div>
+              </div>
+            </div>
+            <!--end row-->
 
-                        <div class="card mr-5 project-card" style="width: 18rem;">
-                            <img src="./assets/images/technics-q-c-640-480-7.jpg" class="card-img-top" alt="Project 4">
-                            <div class="card-body">
-                                <h5 class="card-title">Project 4</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end row-->
+            <div class="row">
+              <div class="card mr-5 project-card" style="width: 18rem;">
+                <img
+                  src="./assets/images/technics-q-c-640-480-9.jpg"
+                  class="card-img-top"
+                  alt="Project 5"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Project 5</h5>
+                </div>
+              </div>
 
-                    <div class="row">
-                        <div class="card mr-5 project-card" style="width: 18rem;">
-                            <img src="./assets/images/technics-q-c-640-480-9.jpg" class="card-img-top" alt="Project 5">
-                            <div class="card-body">
-                                <h5 class="card-title">Project 5</h5>
-                            </div>
-                        </div>
-
-                        <!--spare slot for project:
+              <!--spare slot for project:
                    <div class="card mr-5 project-card" style="width: 18rem;">
                             <img src="./assets/images/technics-q-c-640-480-9.jpg" class="card-img-top" alt="Project 6">
                             <div class="card-body">
                                 <h5 class="card-title">Project 4</h5>
                             </div>
                         </div>        -->
-                    </div>
-                    <!--end row-->
-
-
-                </div>
             </div>
+            <!--end row-->
+          </div>
         </div>
-        <!--end card space-->
+      </div>
+      <!--end card space-->
 
-        <div class="col-lg-2 col-md-2 col-sm-2">
-            <!--holds space to the right end of body-->
-        </div>
+      <div class="col-lg-2 col-md-2 col-sm-2">
+        <!--holds space to the right end of body-->
+      </div>
     </div>
     <!--row ends-->
 
-    <footer class="navbar navbar-expand-lg text-center fixed-bottom navbar-dark bg-dark pt-3">
-        <div class="navbar-brand" id="footer-brand">
-            Copyright &copy;
-        </div>
+    <footer
+      class="navbar navbar-expand-lg text-center fixed-bottom navbar-dark bg-dark pt-3"
+    >
+      <div class="navbar-brand" id="footer-brand">
+        Copyright &copy;
+      </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
