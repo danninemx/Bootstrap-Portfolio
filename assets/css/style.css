@@ -1,26 +1,72 @@
 body {
-    background: url("../images/concrete_seamless.png")
+  background: url("../images/concrete_seamless.png");
 }
 
-h1  {
-    font-family: Times, "Times New Roman", sans-serif;
+h1 {
+  font-family: Times, "Times New Roman", sans-serif;
+}
+
+p {
+  word-break: keep-all;
 }
 
 /* Below is for the img & heading pair in portfolio.html  */
 .project-card {
-    margin: 20px 0 20px 0;
+  margin: 20px 0 20px 0;
 }
 
 .img-thumbnail {
-    float: left;
-    margin-right: 1em;
+  float: left;
+  margin-right: 1em;
 }
-.container{
-    padding: 5px;
+.container {
+  padding: 5px;
 }
 
-#footer-brand  {
-    flex: auto;
-    font-size: 1em;
-    color: #ccc;
+.profile,
+.contact {
+  margin-bottom: 10%;
+}
+
+.portfolio-row {
+  margin: auto;
+}
+
+.portfolio-card {
+  margin-bottom: 5%;
+}
+
+#footer-brand {
+  flex: auto;
+  font-size: 1em;
+  color: #ccc;
+}
+
+.connect-row-cont {
+  margin: auto;
+}
+
+.connect-container {
+  text-align: center;
+}
+
+.connect {
+  padding: 5px;
+}
+
+.connect-img {
+  height: auto;
+  max-width: 55%;
+}
+
+@media only screen and (max-width: 768px) {
+  .connect-img {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .connect-img {
+    width: 40%;
+  }
 }

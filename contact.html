@@ -1,100 +1,146 @@
 `<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>About | Danny Kim</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
 
-</head>
-
-<body class="pt-5">
-<!--padding top avoids overlap between fixed NavBar and other contents per:
+  <body class="pt-5">
+    <!--padding top avoids overlap between fixed NavBar and other contents per:
 https://getbootstrap.com/docs/4.0/components/navbar/#containers-->
-<section id="main-header">
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light pb-3">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">Danny Kim</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <section id="main-header">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light pb-3">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Danny Kim</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-                <div class="collapse navbar-collapse text-right" id="navbarNavAltMarkup">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>  <!--ends container within Nav Bar-->
-        </nav>  <!--ends Bootstrap Nav Bar-->
-    </section>  <!--ends main-header-->
-
+          <div
+            class="collapse navbar-collapse text-right"
+            id="navbarNavAltMarkup"
+          >
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="contact.html"
+                  >Contact <span class="sr-only">(current)</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--ends container within Nav Bar-->
+      </nav>
+      <!--ends Bootstrap Nav Bar-->
+    </section>
+    <!--ends main-header-->
 
     <div class="row pt-3 mt-3">
-        
-        <div class="col-lg-2 col-md-2 col-sm-2">
+      <div class="col-lg-2 col-md-2 col-sm-2">
         <!--empty space on left-->
-        </div>
-            
-        <div class="card col-lg-8 col-md-8 col-sm-8 col-xs-12"> 
-                <!--using grid col # makes alignment tricky here-->
+      </div>
 
-            <div class="card-body">
-                <div class="container">
-                    <h1 class="card-title">Contact</h1>
-                    <hr>
-                    <form class="col-lg">
-                        <ul>
-                            <li>
-                                <div class="form-group">
-                                    <label for="contactNameInput">Name</label>
-                                    <input type="text" class="form-control" id="contactNameInput" placeholder="John Smith">
-                                </div>        
-                            </li>
-                            <li>
-                                <div class="form-group">
-                                    <label for="contactEmailInput">Email</label>
-                                    <input type="email" class="form-control" id="contactEmailInput" placeholder="name@example.com">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form-group">
-                                    <label for="contactTextarea">Message</label>
-                                    <textarea class="form-control" id="contactTextarea" rows="8"></textarea>
-                                </div>
-                            </li>
-                        </ul>
-                        <button type="submit" class="btn btn-primary mb-2">Submit</button>
-                    </form>
-                </div>
+      <div class="card col-lg-8 col-md-8 col-sm-8 col-xs-12">
+        <!--using grid col # makes alignment tricky here-->
+
+        <div class="card-body contact   ">
+          <div class="container" id="connect-row-cont">
+            <h1 class="card-title">Contact</h1>
+            <hr />
+
+            <div class="row connect-container">
+              <div class="col-lg-4 col-md-4 col-sm-12 connect" id="github">
+                <a href="https://github.com/danninemx">
+                  <img
+                    src="https://electronjs.org/images/apps/github-desktop-icon.png"
+                    class="connect-img"
+                    alt="Danny's Github"
+                    id="ghImg"
+                  />
+                </a>
+                <!-- End of column -->
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-12 connect" id="linkedin">
+                <a href="https://www.linkedin.com/in/dannykimus/">
+                  <img
+                    src="https://mikespringer.files.wordpress.com/2014/08/linkedin-icon.png"
+                    class="connect-img"
+                    alt="Danny's LinkedIn"
+                    id="liImg"
+                  />
+                </a>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-12 connect" id="resume">
+                <a
+                  href="https://drive.google.com/file/d/1mkllpwRFOehLuOJrAtWzqRbOwHFxV4Do/view?usp=sharing"
+                >
+                  <img
+                    src="https://cdn4.iconfinder.com/data/icons/business-management-2/256/CV-512.png"
+                    class="connect-img"
+                    alt="Danny's Resume"
+                    id="resumeImg"
+                  />
+                </a>
+              </div>
+
+              <!-- End of row -->
             </div>
+          </div>
         </div>
-        <div class="col-lg-2 col-md-2 col-sm-2">
-            <!--holds space to the right end of body-->
-        </div>
-    </div> <!--row ends-->
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-2">
+        <!--holds space to the right end of body-->
+      </div>
+    </div>
+    <!--row ends-->
 
-    <footer class="navbar navbar-expand-lg text-center fixed-bottom navbar-dark bg-dark pt-3">
-        <div class="navbar-brand" id="footer-brand">
-            Copyright &copy;
-        </div>
+    <footer
+      class="navbar navbar-expand-lg text-center fixed-bottom navbar-dark bg-dark pt-3"
+    >
+      <div class="navbar-brand" id="footer-brand">
+        Copyright &copy;
+      </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
