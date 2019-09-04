@@ -8,6 +8,8 @@ h1 {
 
 p {
   word-break: keep-all;
+  font-size: 1.4em;
+  font-family: "Times New Roman", Times, serif;
 }
 
 /* Below is for the img & heading pair in portfolio.html  */
